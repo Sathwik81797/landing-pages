@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Course landing page with Google Sheets lead capture." />
+  <title>Fellowship Program | Doctyn Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">DOCTYN ACADEMY</div>
+      <a href="#apply" class="header-cta">Apply Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Structured Learning for Doctors</span>
+          <h1>Advance Your Clinical Learning Without Putting Your Career on Hold</h1>
+          <p class="hero-lead">
+            A structured fellowship pathway designed for doctors who want clinically relevant learning,
+            expert-led sessions and a clear progression plan.
+          </p>
+
+          <div class="feature-row">
+            <div class="feature-card">
+              <strong>12 Months</strong>
+              <span>Structured Program</span>
+            </div>
+            <div class="feature-card">
+              <strong>Expert Faculty</strong>
+              <span>Specialty-focused Learning</span>
+            </div>
+            <div class="feature-card">
+              <strong>Flexible</strong>
+              <span>Designed for Doctors</span>
+            </div>
+          </div>
+
+          <a class="primary-btn" href="#apply">Request Program Details</a>
+        </div>
+
+        <div class="lead-card" id="apply">
+          <div class="lead-card-head">
+            <span class="mini-label">Admissions Enquiry</span>
+            <h2>Get Program Details</h2>
+            <p>Fill in your details and our admissions team will contact you.</p>
+          </div>
+
+          <form id="leadForm">
+            <div class="field">
+              <label for="full_name">Full Name</label>
+              <input id="full_name" name="full_name" type="text" placeholder="Dr. Your Name" required />
+            </div>
+
+            <div class="field">
+              <label for="phone">Mobile Number</label>
+              <input id="phone" name="phone" type="tel" inputmode="numeric" placeholder="+91 98765 43210" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="doctor@example.com" />
+            </div>
+
+            <div class="two-col">
+              <div class="field">
+                <label for="city">City</label>
+                <input id="city" name="city" type="text" placeholder="Hyderabad" />
+              </div>
+
+              <div class="field">
+                <label for="qualification">Qualification</label>
+                <select id="qualification" name="qualification" required>
+                  <option value="">Select</option>
+                  <option>MBBS</option>
+                  <option>MD / MS</option>
+                  <option>DNB</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="course">Program Interested In</label>
+              <select id="course" name="course" required>
+                <option value="">Select a program</option>
+                <option>Fellowship in Critical Care Medicine</option>
+                <option>Fellowship in Internal Medicine</option>
+                <option>Fellowship in Diabetology</option>
+                <option>Fellowship in Family Medicine</option>
+              </select>
+            </div>
+
+            <input type="hidden" name="utm_source" id="utm_source">
+            <input type="hidden" name="utm_medium" id="utm_medium">
+            <input type="hidden" name="utm_campaign" id="utm_campaign">
+            <input type="hidden" name="utm_content" id="utm_content">
+            <input type="hidden" name="utm_term" id="utm_term">
+            <input type="hidden" name="page_url" id="page_url">
+
+            <button type="submit" class="submit-btn" id="submitBtn">Submit Enquiry</button>
+            <p class="privacy-note">By submitting, you agree to be contacted regarding the selected program.</p>
+            <div class="form-message" id="formMessage" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Why This Format Works</span>
+          <h2>Built Around the Learning Needs of Working Doctors</h2>
+          <p>
+            The page is intentionally conversion-focused: clear program value, minimal distractions,
+            mobile-friendly design and a short enquiry form.
+          </p>
+        </div>
+
+        <div class="benefit-grid">
+          <article>
+            <h3>Clinically Relevant</h3>
+            <p>Keep the content focused on practical specialty learning rather than generic education messaging.</p>
+          </article>
+          <article>
+            <h3>Lead Tracking Ready</h3>
+            <p>Every form submission can be captured in Google Sheets with UTM source and campaign parameters.</p>
+          </article>
+          <article>
+            <h3>Fast to Duplicate</h3>
+            <p>Clone the same page for Critical Care, Internal Medicine, Diabetology or any other program.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <div class="container cta-inner">
+        <div>
+          <span class="eyebrow light">Admissions</span>
+          <h2>Speak With the Program Team</h2>
+        </div>
+        <a href="#apply" class="secondary-btn">Apply Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Doctyn Academy</span>
+      <span>Landing page starter template</span>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
