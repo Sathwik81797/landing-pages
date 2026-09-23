@@ -13,8 +13,14 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">DOCTYN ACADEMY</div>
-      <a href="#apply" class="header-cta">Apply Now</a>
+      <a href="#" class="doctyn-logo">
+  <span class="doctyn-mark">D</span>
+  <span class="doctyn-brand-text">
+    <strong>Doctyn</strong>
+    <small>ACADEMY</small>
+  </span>
+</a>
+      <button type="button" class="header-cta apply-now-trigger">Apply Now</button>
     </div>
   </header>
 
@@ -30,18 +36,43 @@
           </p>
 
           <div class="feature-row">
-            <div class="feature-card">
+
+            <button
+              type="button"
+              class="feature-card feature-action"
+              data-feature="structure">
+
+              <span class="feature-number">01</span>
               <strong>12 Months</strong>
               <span>Structured Program</span>
-            </div>
-            <div class="feature-card">
+              <small>View learning journey →</small>
+
+            </button>
+
+            <button
+              type="button"
+              class="feature-card feature-action"
+              data-feature="faculty">
+
+              <span class="feature-number">02</span>
               <strong>Expert Faculty</strong>
               <span>Specialty-focused Learning</span>
-            </div>
-            <div class="feature-card">
+              <small>Explore teaching approach →</small>
+
+            </button>
+
+            <button
+              type="button"
+              class="feature-card feature-action"
+              data-feature="flexible">
+
+              <span class="feature-number">03</span>
               <strong>Flexible</strong>
               <span>Designed for Doctors</span>
-            </div>
+              <small>See how learning works →</small>
+
+            </button>
+
           </div>
 
           <a class="primary-btn" href="#apply">Request Program Details</a>
@@ -162,5 +193,98 @@
 
   <script src="config.js"></script>
   <script src="script.js"></script>
+
+<!-- APPLY NOW MODAL -->
+<div class="apply-modal" id="applyModal" aria-hidden="true">
+
+  <div class="apply-modal-backdrop" data-close-modal></div>
+
+  <div class="apply-modal-card">
+
+    <button
+      class="modal-close"
+      type="button"
+      aria-label="Close"
+      data-close-modal>
+      ×
+    </button>
+
+    <span class="eyebrow">Doctyn Admissions</span>
+
+    <h2>How Would You Like to Proceed?</h2>
+
+    <p class="modal-intro">
+      Choose the next step that works best for you.
+    </p>
+
+    <div class="apply-options">
+
+      <button
+        type="button"
+        class="apply-option primary-option"
+        data-action="application">
+
+        <span class="option-number">01</span>
+
+        <span class="option-copy">
+          <strong>Start Application</strong>
+          <small>
+            Complete a quick enquiry and let our admissions team
+            guide you further.
+          </small>
+        </span>
+
+        <span class="option-arrow">→</span>
+
+      </button>
+
+
+      <button
+        type="button"
+        class="apply-option"
+        data-action="details">
+
+        <span class="option-number">02</span>
+
+        <span class="option-copy">
+          <strong>Get Program Details</strong>
+          <small>
+            Request curriculum, eligibility and program information.
+          </small>
+        </span>
+
+        <span class="option-arrow">→</span>
+
+      </button>
+
+
+      <button
+        type="button"
+        class="apply-option"
+        data-action="explore">
+
+        <span class="option-number">03</span>
+
+        <span class="option-copy">
+          <strong>Explore the Program First</strong>
+          <small>
+            Continue through the program structure and learning format.
+          </small>
+        </span>
+
+        <span class="option-arrow">→</span>
+
+      </button>
+
+    </div>
+
+    <p class="modal-note">
+      No payment is required to submit an enquiry.
+    </p>
+
+  </div>
+
+</div>
+
 </body>
 </html>
